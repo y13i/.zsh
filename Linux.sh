@@ -1,4 +1,7 @@
+# https://zenn.dev/kaityo256/articles/open_command_on_wsl
+
 function open() {
+  # check if it's running on WSL
   [[ ! (( $+commands[explorer.exe] )) ]] && return 1
 
   if [ $# != 1 ]; then
