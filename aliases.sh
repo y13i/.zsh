@@ -1,5 +1,7 @@
 alias kx="kubectx"
 alias kn="kubens"
+alias kxc="kubectx --current"
+alias knc="kubens --current"
 alias kg="kubectl get"
 alias kd="kubectl describe"
 alias hl="helm ls"
