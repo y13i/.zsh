@@ -2,6 +2,7 @@ local.sh
 .zcompdump
 .zcompdump-*
 .zsh_history
+.zsh_sessions/
 
 # Windows
 Thumbs.db
