@@ -58,3 +58,6 @@ esac
 # pnpm end
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+unsetopt CORRECT
+unsetopt CORRECT_ALL
