@@ -24,11 +24,9 @@ plugins=(
   zsh-syntax-highlighting
   zsh-expand
   git
-  nvm
   node
   npm
   aws
-  gvm
   kubectl
 )
 
@@ -43,7 +41,6 @@ else
 fi
 
 [[ (( $+commands[direnv] )) ]] && eval "$(direnv hook zsh)"
-[[ -s "${HOME}/.gvm/scripts/gvm" ]] && source "${HOME}/.gvm/scripts/gvm"
 [[ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]] && . "${HOME}/google-cloud-sdk/path.zsh.inc"
 [[ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]] && . "${HOME}/google-cloud-sdk/completion.zsh.inc"
 
