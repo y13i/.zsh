@@ -58,3 +58,10 @@ esac
 
 unsetopt CORRECT
 unsetopt CORRECT_ALL
+
+[ -f "${HOME}/.local/bin/mise" ] && eval "$(${HOME}/.local/bin/mise activate zsh)"
+
+case ":$PATH:" in
+  *":$GOBIN:"*) ;;
+  *) export PATH="$GOBIN:$PATH" ;;
+esac
