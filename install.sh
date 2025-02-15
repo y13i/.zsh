@@ -34,9 +34,6 @@ clone_repo "https://github.com/zsh-users/zsh-syntax-highlighting.git" "$ZSH_CUST
 # Clone zsh-expand plugin
 clone_repo "https://github.com/MenkeTechnologies/zsh-expand.git" "$ZSH_CUSTOM/plugins/zsh-expand"
 
-# Clone the user's .zsh repository
-clone_repo "https://github.com/y13i/.zsh.git" "$HOME/.zsh"
-
 # Set ZDOTDIR in .zshenv
 if ! grep -q "export ZDOTDIR=\$HOME/.zsh" "$HOME/.zshenv"; then
   echo "export ZDOTDIR=\$HOME/.zsh" > "$HOME/.zshenv"
