@@ -40,7 +40,7 @@ else
   export EDITOR='code'
 fi
 
-[[ (( $+commands[direnv] )) ]] && eval "$(direnv hook zsh)"
+if command -v direnv &>/dev/null; then eval "$(direnv hook zsh)"; fi
 [[ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]] && . "${HOME}/google-cloud-sdk/path.zsh.inc"
 [[ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]] && . "${HOME}/google-cloud-sdk/completion.zsh.inc"
 
