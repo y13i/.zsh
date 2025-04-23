@@ -1,5 +1,7 @@
 alias kx="kubectx"
+alias kxl="kubectx | tee"
 alias kn="kubens"
+alias knl="kubens | tee"
 alias kxc="kubectx --current"
 alias knc="kubens --current"
 alias kg="kubectl get"
