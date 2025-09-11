@@ -66,6 +66,14 @@ case ":$PATH:" in
   *) export PATH="$GOBIN:$PATH" ;;
 esac
 
+case ":$PATH:" in
+  *":$KREW_ROOT:"*) ;;
+  *) export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH" ;;
+esac
+
+if command -v zoxide &>/dev/null; then eval "$(zoxide init zsh)"; fi
+if [[ -d /home/linuxbrew/.linuxbrew && -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"; fi
+
 function zshaddhistory() {
   emulate -L zsh
   if [[ $1 = *"AWS_SECRET_ACCESS_KEY"* ]] ; then
