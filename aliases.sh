@@ -4,9 +4,11 @@ alias kn="kubens"
 alias knl="kubens | tee"
 alias kxc="kubectx --current"
 alias knc="kubens --current"
+
 alias kg="kubectl get"
 alias kgvs="kubectl get virtualservices.networking.istio.io"
 alias kgvsa="kubectl get virtualservices.networking.istio.io --all-namespaces"
+
 alias kd="kubectl describe"
 alias kdf="kubectl diff -f"
 alias kk="kubectl kustomize"
@@ -15,20 +17,27 @@ alias kdk="kubectl diff --kustomize"
 alias krr="kubectl rollout restart"
 alias ktn="kubectl top node"
 alias ktp="kubectl top pod"
+
 alias hl="helm ls"
 alias hla="helm ls --all-namespaces"
+
 alias tf="terraform"
 alias tfp="terraform plan"
 alias tfa="terraform apply"
+
 alias p="pnpm"
 alias pi="pnpm install"
 alias pr="pnpm run"
 alias pe="pnpm exec"
 alias pew="pnpm exec wrangler --experimental-json-config"
 alias pewt="pnpm exec wrangler --experimental-json-config tail"
+
 alias asg="aws sts get-caller-identity"
+
 alias digs="dig +short"
+
 alias lf="less +F"
+
 alias e="eza"
 alias el="eza -l"
 alias ela="eza -la"
