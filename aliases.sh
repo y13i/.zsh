@@ -41,3 +41,5 @@ alias lf="less +F"
 alias e="eza"
 alias el="eza -l"
 alias ela="eza -la"
+
+alias dv="devbox"
