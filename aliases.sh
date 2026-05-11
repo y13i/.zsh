@@ -42,4 +42,4 @@ alias e="eza"
 alias el="eza -l"
 alias ela="eza -la"
 
-alias dv="devbox"
+alias db="devbox"
