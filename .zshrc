@@ -1,6 +1,6 @@
-[ -f $ZDOTDIR/`uname`.sh ] && . $ZDOTDIR/`uname`.sh
-[ -f $ZDOTDIR/aliases.sh ] && . $ZDOTDIR/aliases.sh
 [ -f $HOME/.zshrc ] && . $HOME/.zshrc
+[ -f $ZDOTDIR/uname/`uname`.sh ] && . $ZDOTDIR/uname/`uname`.sh
+[ -f $ZDOTDIR/aliases.sh ] && . $ZDOTDIR/aliases.sh
 
 # https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
@@ -67,7 +67,6 @@ case ":$PATH:" in
 esac
 
 if command -v zoxide &>/dev/null; then eval "$(zoxide init zsh)"; fi
-if [[ -d /home/linuxbrew/.linuxbrew && -x /home/linuxbrew/.linuxbrew/bin/brew ]]; then eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"; fi
 
 function zshaddhistory() {
   emulate -L zsh
