@@ -6,9 +6,6 @@ alias kxc="kubectx --current"
 alias knc="kubens --current"
 
 alias kg="kubectl get"
-alias kgvs="kubectl get virtualservices.networking.istio.io"
-alias kgvsa="kubectl get virtualservices.networking.istio.io --all-namespaces"
-
 alias kd="kubectl describe"
 alias kdf="kubectl diff -f"
 alias kk="kubectl kustomize"
