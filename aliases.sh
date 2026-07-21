@@ -29,8 +29,8 @@ alias p="pnpm"
 alias pi="pnpm install"
 alias pr="pnpm run"
 alias pe="pnpm exec"
-alias pew="pnpm exec wrangler --experimental-json-config"
-alias pewt="pnpm exec wrangler --experimental-json-config tail"
+alias pew="pnpm exec wrangler"
+alias pewt="pnpm exec wrangler tail"
 
 alias asg="aws sts get-caller-identity"
 
