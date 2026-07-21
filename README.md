@@ -1,3 +1,5 @@
+**Migrated to [dotfiles](https://github.com/y13i/dotfiles).**
+
 # .zsh
 
 ```sh
