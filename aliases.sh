@@ -40,3 +40,5 @@ alias el="eza -l"
 alias ela="eza -la"
 
 alias db="devbox"
+
+alias cz="chezmoi"
